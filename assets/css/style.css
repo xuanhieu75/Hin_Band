@@ -1,0 +1,376 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.center {
+    text-align: center !important;
+}
+
+
+.row {
+    margin: 0 -8px;
+
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-3 {
+    width: 33.333333%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.color-grey {
+    color: rgb(128, 128, 128) !important;
+}
+
+#header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+}
+/* Nav */
+
+#header #nav {
+    display: block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#header #nav li {
+    position: relative;
+}
+#header #nav > li > a {
+    padding: 0 24px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 46px;
+    display: block;
+    font-weight: bold;
+}
+
+#header #nav li a {
+    text-decoration: none;
+}
+
+#nav .icon-down {
+    font-size: 12px;
+}
+
+#nav .subnav li:hover a,
+#header > #nav > li:hover > a {
+    background-color: rgb(177, 174, 174);
+    color: black;
+}
+
+#nav li .subnav {
+    position: absolute;
+    top: 46px;
+    background-color: #fff;
+}
+
+#nav .subnav li {
+    line-height: 38px;
+    list-style-type: none;
+    
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    box-shadow: 0 4px 10px;
+}
+
+#nav .subnav a {
+    display: block;
+    color: #000;
+    padding: 0 16px;
+    padding-right: 58.11px;
+}
+/* Nav */
+
+/* Search Button */
+#header .menu-btn,
+#header .search-btn {
+    position: absolute;
+    color: #fff;
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+    top: 0;
+    right: 0;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Search Button */
+
+/* Slider */
+#slider{
+    padding-top: 50%;
+    background: url('/F8\ Tutorial/TheBand/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+    margin-top: 46px;
+}
+
+.slider-content {
+    color: #fff;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.slider-content .slider-header {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.slider-content .slider-text {
+    margin: 16px 0;;
+    font-weight: bold;
+}
+/* Slider */
+
+/* Content */
+#content{
+
+}
+/* content-section */
+#content .content-section {
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .section-title {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+#content .section-sub-title {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.content-section .content-text {
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.member-list {
+    padding: 32px 0;
+}
+
+.member-list .member-item {
+    float: left;
+}
+
+.member-list .member-name {
+    margin: 15px 0;
+}
+
+.member-list .member-img {
+    width: 60%;
+}
+/* content-section */
+
+/* tour-section */
+#content .tour-section {
+    background-color: #000;
+}
+
+.tour-section .section-title {
+    color: #fff;
+}
+
+.tour-section .tour-date {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.tour-section .tour-date li {
+    border-bottom:1px solid rgb(128, 128, 128) ;
+    list-style: none;
+    padding: 10px 16px;
+}
+
+.tour-date .tour-status {
+    color: white;
+    margin-left: 16px;
+    padding: 2px 8px;
+    background-color: #F44336;
+}
+
+.tour-date .tour-left {
+    float: right;
+    border: 1px solid #000;
+    padding: 2px 8px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.tour-tickets {
+    padding: 32px 0;
+    margin: 0 -8px;
+}
+
+.tour-tickets .tour-item {
+    float: left;
+    padding: 0 8px;
+}
+
+.tour-tickets .ticket-img {
+    width: 100%;
+    display: block;
+}
+
+.ticket-img:hover {
+    opacity: 60%;
+}
+
+.tour-tickets .ticket-content {
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.ticket-content .ticket-name {
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+
+.ticket-text {
+    margin: 16px 0;
+}
+
+.buy-btn {
+    font-size: 15px;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+}
+
+.buy-btn:hover {
+    color: #000;
+    background-color: rgb(177, 174, 174);
+    cursor: pointer;
+}
+
+/* tour-section */
+
+/* contact-section */
+.contact-content {
+    padding: 32px 0;
+    line-height: 1.5;
+}
+
+.contact-info li {
+    list-style: none;
+}
+
+.contact-info .ti {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.contact-form > input {
+    border: 1px solid #ccc;
+}
+
+.form-text, .form-message  {
+    padding: 8px;
+    width: 100%;
+}
+
+.message-border {
+    padding:8px;
+}
+
+.send-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 16px;
+    float: right;
+    margin: 8px 0;
+    border: none;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+/* contact-section */
+.map-section .map-img {
+    width: 100%;
+}
+/* Content */
+#footer{
+    padding: 64px 16px;
+}
+
+.social-list {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.social-list > a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+.link-web {
+    color: rgb(128, 128, 128);
+}  
+
+/* 
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+} */
