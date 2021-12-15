@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style type="text/css">
+    .container{
+        background-color: white;
+        width: 500px;
+        height: 250px;
+        border: #ccc 4px solid;
+        border-radius: 5px;
+        margin-top: 10em;
+    }
+    #email{
+        width: 20em;
+        height: 20px;
+        align: center;
+        border-radius: 4px;
+        border: #ccc 2px solid;  
+    
+    }
+    #password{
+        width: 20em;
+        height: 20px;
+        border-radius: 4px;
+        border: #ccc 2px solid;   
+    }
+
+    .form_email{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form_password{
+        display: flex;
+        justify-content: space-between;
+    }
+    .link{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <div align = "center">
+        <div class="container">
+            <h1>Login</h1>
+            <div class="form_email">
+                <label class="form_label" for="email"> Email </label>
+                <input type="text" name="email" id="email"  placeholder="nhập email">
+            </div>
+            <div class="form_password"> 
+                <label class="form_label" for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="nhập password">
+            </div>
+            <div class="link">
+            <a href="register.html">Register</a> 
+            <a href="">Forgot password</a>
+            </div> <br>
+            <button type="submit" class="login">Login</button>
+            
+        </div>
+        </div>
+    </form>
+</body>
+</html>
